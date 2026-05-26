@@ -71,7 +71,7 @@ export default function Home({ setActive }) {
           <div className="section-label">Welcome to my portfolio</div>
 
           <h1 className="hero-name">
-            S Surya Sai<span className="accent-dot">.</span>
+            S Surya Sai<span className="accent-dot"></span>
           </h1>
 
           <p className="hero-role">

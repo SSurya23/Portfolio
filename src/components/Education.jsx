@@ -1,7 +1,7 @@
 import React from 'react';
 
 const EDUCATION = [
-  { degree: 'M.Tech in Artificial Intelligence & Machine Learning', inst: 'IIIT Rajiv Gandhi University', year: 'Expected 2027', current: true },
+  { degree: 'M.Tech in Artificial Intelligence & Machine Learning', inst: 'IIIT Rajiv Gandhi University of Knowledge Technologies (RGUKT)', year: 'Expected 2027', current: true },
   { degree: 'MCA – Master of Computer Applications', inst: 'Adikavi Nannaya University', year: '2021 – 2023' },
   { degree: 'B.Sc Computer Science', inst: 'Pragati Degree College', year: '2016 – 2020' },
   { degree: 'Intermediate (10+2)', inst: 'Pragati Junior College', year: '2014 – 2016' },
@@ -33,7 +33,7 @@ export default function Education() {
                 <div style={{
                   width: 44, height: 44, borderRadius: '50%', flexShrink: 0,
                   background: edu.current
-                    ? 'linear-gradient(135deg, #06b6d4, #3b82f6)'
+                    ? 'linear-gradient(135deg, #115c69, #3b82f6)'
                     : 'rgba(255,255,255,0.06)',
                   border: edu.current ? 'none' : '1px solid rgba(255,255,255,0.12)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -44,7 +44,7 @@ export default function Education() {
                 {i < EDUCATION.length - 1 && (
                   <div style={{
                     width: 2, flex: 1, minHeight: 20,
-                    background: 'linear-gradient(to bottom, rgba(6,182,212,0.4), rgba(6,182,212,0.05))',
+                    background: 'linear-gradient(to bottom, rgba(32, 155, 176, 0.4), rgba(6,182,212,0.05))',
                     margin: '4px 0',
                   }} />
                 )}
@@ -61,7 +61,7 @@ export default function Education() {
                   <div>
                     <div style={{
                       fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 15,
-                      color: edu.current ? '#67e8f9' : '#e2e8f0', marginBottom: 4,
+                      color: edu.current ? '#085661' : '#0f172a', marginBottom: 4,
                     }}>{edu.degree}</div>
                     <div style={{ fontSize: 13, color: '#64748b' }}>{edu.inst}</div>
                   </div>

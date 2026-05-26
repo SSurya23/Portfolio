@@ -54,7 +54,7 @@ export default function Navbar({ active, setActive }) {
           }}
           onClick={() => handleNavClick('Home')}
         >
-          Surya<span style={{ color: '#2563eb' }}>.</span>
+          Surya<span style={{ color: '#2563eb' }}></span>
         </div>
 
         <div className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
