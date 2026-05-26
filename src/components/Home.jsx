@@ -55,7 +55,7 @@ export default function Home({ setActive }) {
         text += ROLES[ri][charIndex];
         charIndex++;
 
-        if (charIndex > ROLES[ri].length) {
+        if (charIndex >= ROLES[ri].length) {
           direction = -1;
         }
       } else {
@@ -197,6 +197,7 @@ export default function Home({ setActive }) {
               display: 'flex',
               gap: 12,
               flexWrap: 'wrap',
+              justifyContent: 'space-between',
             }}
           >
             <button
@@ -359,4 +360,4 @@ export default function Home({ setActive }) {
       </div>
     </section>
   );
-}
+gi}
