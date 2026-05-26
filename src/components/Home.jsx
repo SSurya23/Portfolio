@@ -4,7 +4,7 @@ const ROLES = [
   'Software Engineer',
   'Full Stack Developer',
   'AI/ML Enthusiast',
-  'Problem Solver'
+  'Problem Solver',
 ];
 
 function Particles() {
@@ -96,7 +96,6 @@ export default function Home({ setActive }) {
     >
       <Particles />
 
-      {/* Orbit rings */}
       <div
         style={{
           position: 'absolute',
@@ -109,7 +108,6 @@ export default function Home({ setActive }) {
           transform: 'translate(-50%, -60%)',
         }}
       />
-
       <div
         style={{
           position: 'absolute',
@@ -124,7 +122,7 @@ export default function Home({ setActive }) {
       />
 
       <div
-        className="container"
+        className="container home-layout"
         style={{
           maxWidth: 1100,
           margin: '0 auto',
@@ -135,7 +133,6 @@ export default function Home({ setActive }) {
           alignItems: 'center',
         }}
       >
-        {/* Left Section */}
         <div style={{ animation: 'fadeInUp 0.8s ease forwards' }}>
           <div className="section-label" style={{ marginBottom: 20 }}>
             Welcome to my portfolio
@@ -152,8 +149,7 @@ export default function Home({ setActive }) {
               letterSpacing: '-1px',
             }}
           >
-            S Surya Sai
-            <span style={{ color: '#06b6d4' }}>.</span>
+            S Surya Sai<span style={{ color: '#06b6d4' }}>.</span>
           </h1>
 
           <div
@@ -166,13 +162,9 @@ export default function Home({ setActive }) {
             }}
           >
             <span className="gradient-text">{typed}</span>
-
             <span
               className="cursor-blink"
-              style={{
-                color: '#06b6d4',
-                marginLeft: 2,
-              }}
+              style={{ color: '#06b6d4', marginLeft: 2 }}
             >
               |
             </span>
@@ -193,12 +185,8 @@ export default function Home({ setActive }) {
           </p>
 
           <div
-            style={{
-              display: 'flex',
-              gap: 12,
-              flexWrap: 'wrap',
-              justifyContent: 'space-between',
-            }}
+            className="hero-buttons"
+            style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}
           >
             <button
               className="btn-primary"
@@ -206,17 +194,13 @@ export default function Home({ setActive }) {
             >
               <span>View Projects →</span>
             </button>
-
-            <button
-              className="btn-outline"
-              onClick={() => setActive('About')}
-            >
+            <button className="btn-outline" onClick={() => setActive('About')}>
               About Me
             </button>
           </div>
 
-          {/* Stats */}
           <div
+            className="stats-row"
             style={{
               marginTop: 40,
               display: 'flex',
@@ -231,15 +215,13 @@ export default function Home({ setActive }) {
                     fontFamily: 'Syne, sans-serif',
                     fontWeight: 700,
                     fontSize: 20,
-                    background:
-                      'linear-gradient(135deg, #06b6d4, #3b82f6)',
+                    background: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                   }}
                 >
                   {num}
                 </div>
-
                 <div
                   style={{
                     fontSize: 11,
@@ -255,9 +237,8 @@ export default function Home({ setActive }) {
           </div>
         </div>
 
-        {/* Right Section */}
         <div
-          className="animate-float"
+          className="avatar-section animate-float"
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -269,8 +250,7 @@ export default function Home({ setActive }) {
             style={{
               width: 260,
               height: 260,
-              borderRadius:
-                '30% 70% 70% 30% / 30% 30% 70% 70%',
+              borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%',
               background:
                 'linear-gradient(135deg, rgba(6,182,212,0.15), rgba(59,130,246,0.15))',
               border: '1px solid rgba(6,182,212,0.25)',
@@ -292,8 +272,7 @@ export default function Home({ setActive }) {
                 fontFamily: 'Syne, sans-serif',
                 fontWeight: 800,
                 fontSize: 64,
-                background:
-                  'linear-gradient(135deg, #06b6d4, #3b82f6, #8b5cf6)',
+                background: 'linear-gradient(135deg, #06b6d4, #3b82f6, #8b5cf6)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
               }}
@@ -311,7 +290,6 @@ export default function Home({ setActive }) {
             />
           </div>
 
-          {/* Floating icons */}
           {[
             ['⚛️', '-8%', '10%'],
             ['☕', '85%', '20%'],
@@ -349,15 +327,8 @@ export default function Home({ setActive }) {
           animation: 'float 2s ease-in-out infinite',
         }}
       >
-        <div
-          style={{
-            fontSize: 20,
-            color: 'rgba(6,182,212,0.5)',
-          }}
-        >
-          ↓
-        </div>
+        <div style={{ fontSize: 20, color: 'rgba(6,182,212,0.5)' }}>↓</div>
       </div>
     </section>
   );
-gi}
+}
